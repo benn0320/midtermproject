@@ -6,4 +6,8 @@ gulp.task('sass', function (){
   .src ('scss/**/*.scss')
   .pipe(sass())
   .pipe(gulp.dest('css'))
+
+
+gulp.task('default', function (){
+  gulp.watch('scss/**/*.scss', ['sass'])
 })
