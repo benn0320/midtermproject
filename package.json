@@ -18,5 +18,9 @@
   "homepage": "https://github.com/benn0320/midtermproject#readme",
   "dependencies": {
     "webpack": "^3.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   }
 }
