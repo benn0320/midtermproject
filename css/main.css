@@ -31,6 +31,10 @@ h6 {
   font-weight: 700;
   text-transform: uppercase; }
 
+  .text-center{
+    margin: 20px;
+  }
+
 hr.star-light,
 hr.star-primary {
   max-width: 250px;
@@ -66,13 +70,16 @@ section h2 {
 
 section.success {
   color: white;
-  background: #1c313f; }
+  background: #1c313f;
+o}
 
 @media (max-width: 767px) {
   section {
     padding: 75px 0; }
   section.first {
     padding-top: 75px; } }
+
+
 
 /*BOTTOM - TO THE TOP BUTTON*/
 .scroll-top {
@@ -82,6 +89,7 @@ section.success {
   bottom: 2%;
   width: 50px;
   height: 50px; }
+
 
 .scroll-top .btn {
   background-color: #ef6362;
@@ -184,6 +192,13 @@ header.masthead .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300; }
 
+
+  .profilepic{
+    width: 300px;
+    height: auto;
+  }
+
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 200px;
@@ -237,9 +252,12 @@ header.masthead .intro-text .skills {
 #portfolio * {
   z-index: 2; }
 
+
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px; } }
+
 
 .portfolio-modal .modal-dialog {
   max-width: 100%;
