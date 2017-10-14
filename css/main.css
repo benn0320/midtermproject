@@ -26,6 +26,8 @@ a:hover {
   }
 
 
+
+
 h1,
 h2,
 h3,
@@ -232,7 +234,7 @@ header.masthead .intro-text .skills {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(24, 188, 156, 0.9); }
+  background: rgba(239, 99, 98, 0.9); }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: 1; }
