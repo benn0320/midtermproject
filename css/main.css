@@ -1,13 +1,16 @@
 
-
-
-
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden; }
 
+  @font-face {
+    font-family: 'simplifica';
+    src: url('simplifica.ttf');
+  }
+
+
 p {
-  font-size: 20px; }
+  font-size: 18px; }
 
 p.small {
   font-size: 16px; }
@@ -19,13 +22,6 @@ a:focus,
 a:hover {
   color: #EF6362;
   outline: none; }
-
-  @font-face {
-    font-family: 'simplifica';
-    src: url('simplifica.ttf');
-  }
-
-
 
 
 h1,
@@ -64,9 +60,30 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto; }
 
+/* LOGO WITH ANIMATION */
 .logo {
   width: 20%;
-  height: auto; }
+  height: auto;
+animation-name: logoshake;
+animation-duration: 1s;
+}
+
+@keyframes logoshake {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* LOGO WITH ANIMATION -- END*/
+
+
 
 section {
   padding: 100px 0; }
@@ -105,10 +122,16 @@ o}
   width: 50px;
   height: 50px;
   text-align: center;
-  border-radius: 100%; }
+  border-radius: 100%;
+  border: none; }
 
 .scroll-top .btn:focus {
   outline: none; }
+
+  .scroll-top .btn:hover{
+    background-color: rgba(239, 97, 97, 0.52);
+
+  }
 
 #mainNav {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -201,9 +224,11 @@ header.masthead .intro-text .skills {
 
 
   .profilepic{
-    width: 300px;
+    width: 50%;
     height: auto;
   }
+
+
 
 
 @media (min-width: 768px) {
@@ -214,6 +239,13 @@ header.masthead .intro-text .skills {
     font-size: 4.75em; }
   header.masthead .intro-text .skills {
     font-size: 1.75em; } }
+
+    img.profilepic{
+      position: relative;
+	max-width: 50%;
+	top: 10%;
+	left: 25%;
+    }
 
 #portfolio .portfolio-item {
   right: 0;
@@ -242,7 +274,7 @@ header.masthead .intro-text .skills {
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
   font-size: 20px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 100%;
   height: 20px;
   margin-top: -12px;
@@ -258,6 +290,7 @@ header.masthead .intro-text .skills {
 
 #portfolio * {
   z-index: 2; }
+
 
 
 
