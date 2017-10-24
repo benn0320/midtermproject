@@ -96,6 +96,7 @@ section h2 {
 section.success {
   color: white;
   background: #1c313f;
+
 }
 
 @media (max-width: 767px) {
@@ -551,7 +552,6 @@ footer .footer-below {
   width: 300px;
   height: 400px;
   background-color: #f0ebe8;
-  border: none;
 }
 
 .name {
@@ -568,34 +568,43 @@ footer .footer-below {
 
 .imd {
   font-family: 'Quicksand', sans-serif;
-  color: darkgrey;
+  color: #4B4B4B;
   font-size: 15px;
   position: relative;
-  top: 90px;
+  top: 95px;
   left: 55px;
   animation-name: facepic;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
+.schoollink{
+  color: #ef6362;
+}
+
+.hooverover{
+  position: relative;
+  top: 175px;
+  text-align: center;
+  color: darkgrey;
+}
+
 .laurieface {
   animation-name: facepic;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  border: none;
 }
 
 
 /************* profile picture and flip bio START****************/
 
 .card {
-  border: 0px;
   width: 400px;
   height: 400px;
   position: relative;
   bottom: 400px;
   left: 300px;
-  perspective: 500px;
+  perspective: 600px;
   animation-name: profilepic;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -621,7 +630,7 @@ footer .footer-below {
   height: 100%;
   width: 100%;
   background: white;
-  line-height: 300px;
+  line-height: 30px;
   color: black;
   text-align: center;
   font-size: 10px;
