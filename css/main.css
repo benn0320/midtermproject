@@ -8,22 +8,18 @@ body {
   src: url('simplifica.ttf');
 }
 
-
-.abouttext{
-    font-family: "Reenie Beanie", cursive;
-    font-size: 2em;
-    font-weight: lighter;
-    letter-spacing: 2px;
+.abouttext {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 2em;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
-
-.copyright{
+.copyright {
   font-family: 'simplifica';
   letter-spacing: 5px;
   color: silver;
 }
-
-
 
 img.profilepic {
   position: relative;
@@ -32,10 +28,9 @@ img.profilepic {
   left: 25%;
 }
 
-.catheadwhite{
+.catheadwhite {
   width: 30%;
 }
-
 
 p {
   font-size: 18px;
@@ -87,8 +82,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
 /* LOGO WITH ANIMATION -- END*/
 
 section {
@@ -113,7 +106,6 @@ section.success {
     padding-top: 75px;
   }
 }
-
 
 
 /*BOTTOM - TO THE TOP BUTTON*/
@@ -198,17 +190,16 @@ section.success {
   background-color: #EF6362;
 }
 
-/* MEDIA SCREEN MIN-WIDTH 992px */
-@media (min-width: 992px) {
 
+/* MEDIA SCREEN MIN-WIDTH 992px */
+
+@media (min-width: 992px) {
   img.profilepic {
     position: relative;
     max-width: 70%;
     top: 10%;
     left: 15%;
   }
-
-
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -267,10 +258,11 @@ header.masthead .intro-text .skills {
 }
 
 
-
 /***** MEDIA SCREEN 992px END*****/
 
+
 /*Tablet + Desktop*/
+
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 150px;
@@ -278,7 +270,6 @@ header.masthead .intro-text .skills {
   }
   header.masthead .intro-text .name {
     font-size: 2.75em;
-
   }
   header.masthead .intro-text .skills {
     font-size: 1.75em;
@@ -286,11 +277,9 @@ header.masthead .intro-text .skills {
   }
 }
 
-.pgrid{
+.pgrid {
   font-size: 15px;
 }
-
-
 
 #portfolio .portfolio-item {
   right: 0;
@@ -348,7 +337,6 @@ header.masthead .intro-text .skills {
     margin: 0 0 30px;
   }
 }
-
 
 .portfolio-modal .modal-dialog {
   max-width: 100%;
@@ -454,8 +442,8 @@ header.masthead .intro-text .skills {
   margin: 0;
   -webkit-transition: top 0.3s ease, opacity 0.3s ease;
   -moz-transition: top 0.3s ease, opacity 0.3s ease;
-  -ms-transition: top 0.3s ease, opacity 0.3s ease;#
-  transition: top 0.3s ease, opacity 0.3s ease;
+  -ms-transition: top 0.3s ease, opacity 0.3s ease;
+  # transition: top 0.3s ease, opacity 0.3s ease;
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
@@ -528,8 +516,8 @@ footer .footer-below {
   border: none;
 }
 
-#sendMessageButton:hover{
-background-color: rgba(239, 97, 97, 0.52);
+#sendMessageButton:hover {
+  background-color: rgba(239, 97, 97, 0.52);
 }
 
 .btn-social {
@@ -545,4 +533,124 @@ background-color: rgba(239, 97, 97, 0.52);
 
 .btn.active, .btn:active, .btn:focus {
   outline: none;
+}
+
+
+/****** ABOUT CARD*****/
+
+.cardcontainer {
+  height: 400px;
+  width: 700px;
+  margin: 0 auto;
+  animation-name: facepic;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.leftbox {
+  width: 300px;
+  height: 400px;
+  background-color: #f0ebe8;
+  border: none;
+}
+
+.name {
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  font-size: 40px;
+  position: relative;
+  top: 120px;
+  left: 50px;
+  animation-name: facepic;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.imd {
+  font-family: 'Quicksand', sans-serif;
+  color: darkgrey;
+  font-size: 15px;
+  position: relative;
+  top: 90px;
+  left: 55px;
+  animation-name: facepic;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.laurieface {
+  animation-name: facepic;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  border: none;
+}
+
+
+/************* profile picture and flip bio START****************/
+
+.card {
+  border: 0px;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  bottom: 400px;
+  left: 300px;
+  perspective: 500px;
+  animation-name: profilepic;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.content {
+  border: 0px;
+  position: relative;
+  padding: none;
+  width: 400px;
+  height: 400px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg);
+  transition: transform 0.5s;
+}
+
+.front, .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #f0ebe8;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: black;
+  transform: rotateY( 180deg);
+}
+
+.click {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-left: 60px;
+}
+
+
+/************* profile picture and flip bio END****************/
+
+@keyframes facepic {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
