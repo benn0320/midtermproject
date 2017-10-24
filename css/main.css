@@ -8,12 +8,34 @@ body {
   src: url('simplifica.ttf');
 }
 
+
+.abouttext{
+    font-family: "Reenie Beanie", cursive;
+    font-size: 2em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+
+.copyright{
+  font-family: 'simplifica';
+  letter-spacing: 5px;
+  color: silver;
+}
+
+
+
 img.profilepic {
   position: relative;
   max-width: 50%;
   top: 10%;
   left: 25%;
 }
+
+.catheadwhite{
+  width: 30%;
+}
+
 
 p {
   font-size: 18px;
@@ -181,7 +203,7 @@ section.success {
 
   img.profilepic {
     position: relative;
-    max-width: 80%;
+    max-width: 70%;
     top: 10%;
     left: 15%;
   }
@@ -240,8 +262,8 @@ header.masthead .intro-text .name {
 }
 
 header.masthead .intro-text .skills {
-  font-size: 1.25em;
-  font-weight: 300;
+  font-size: 1em;
+  font-weight: 100;
 }
 
 
@@ -251,14 +273,16 @@ header.masthead .intro-text .skills {
 /*Tablet + Desktop*/
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 100px;
   }
   header.masthead .intro-text .name {
-    font-size: 4.75em;
+    font-size: 2.75em;
+
   }
   header.masthead .intro-text .skills {
     font-size: 1.75em;
+    color: #d9d9d9;
   }
 }
 
@@ -348,6 +372,7 @@ header.masthead .intro-text .skills {
 .portfolio-modal .modal-dialog .modal-content h2 {
   font-size: 3em;
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .portfolio-modal .modal-dialog .modal-content img {
